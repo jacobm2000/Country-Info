@@ -13,12 +13,16 @@ function getCountry(word) {
         x=Math.floor(Math.random() *l)
         lat=data[1][x].latitude
         lon=data[1][x].longitude
-        map.src="https://maps.google.com/maps?q="+lat+","+lon+"&hl=en&z=2&amp&output=embed"
+        
         if(data[1][x].region.value ==="Aggregates"){
             getCountry()
             
         }
-       word.textContent=data[1][x].name;
+        else{
+            word.textContent=data[1][x].name;
+            map.src="https://maps.google.com/maps?q="+lat+","+lon+"&hl=en&z=2&amp&output=embed"
+        }
+       
         
        
     
