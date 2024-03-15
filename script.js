@@ -24,6 +24,8 @@ function getCountry() {
         }
         else{
             country.textContent=data[1][x].name;
+  
+            map.classList.add("bg-dark")
             map.src="https://maps.google.com/maps?q="+lat+","+lon+"&hl=en&z=2&amp&output=embed"
                 let desc=document.getElementById("desc")
                 fetch("https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles="+country.textContent+"&formatversion=2&exsentences=3&exlimit=1&explaintext=1&origin=*").then(function(resp) {
