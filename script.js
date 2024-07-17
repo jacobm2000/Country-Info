@@ -34,6 +34,7 @@ function getCountry() {
             }).then(function(data) {
                 desc.textContent="Description: "+data.query.pages[0].extract
                 if(desc.textContent.length<40){
+                   
                     desc.textContent="Description: Not Avaliable"
                 }
             })

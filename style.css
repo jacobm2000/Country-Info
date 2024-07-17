@@ -14,8 +14,8 @@ body{
     font-size: x-large;
 }
 h1{
-    color: white;
-    background-color: blue;
+    color: rgb(59, 56, 56);
+    
 }
 
 @media (max-width: 768px) {
